@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medytacja</title>
+    <style>
+		/* stylowanie tła wodospadu */
+		body {
+			background-image: url('wodospad2.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 844px;
+			width: 390px;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		/* stylowanie przycisku */
+		button {
+			background-color: #4CAF50;
+			color: white;
+			font-size: 34px;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		/* stylowanie CSS dla licznika */
+        .timer-display {
+            font-size: 72px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+            color: black;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        .sekcja {
+            margin-left: 600px;
+			align-items: center;
+			justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+<!-- powitanie i przycisk "Zaczynamy" -->
+
+<div class="sekcja">
+<h1>Isha Krija</h1>
+<button id="start-btn">Zaczynamy</button>
+
+<!-- wyświetlanie czasu minutnika -->
+<div class="timer-display"></div>
+</div>
+<!-- skrypt JavaScript, który będzie obsługiwał minutnik i dźwięki -->
+<script src="medytacja.js"></script>
+</body>
+</html>
