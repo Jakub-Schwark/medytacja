@@ -63,4 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startButton.addEventListener('click', () => {
         startTimer();
     });
+    startButton.addEventListener('touchstart', () => {
+        startTimer();
+    });
 });
