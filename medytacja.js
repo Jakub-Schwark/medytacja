@@ -43,9 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    function playSound(audio) {
-        audio.play();
-    }
+   function playSound(audio) {
+  audio.currentTime = 0;
+  audio.play();
+  document.body.addEventListener('click', function () {
+    audio.play();
+  });
+}
 
     async function zablokujWygazanieEkranu() {
       try {
